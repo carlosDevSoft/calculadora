@@ -1,0 +1,65 @@
+<ion-header>
+
+  <style>
+    #botones{
+      width:65px;
+    }
+  </style>
+  <ion-navbar>
+    <ion-title>
+      Calculator
+    </ion-title>
+  </ion-navbar>
+
+<script src="guion.js">
+
+</script>
+
+</ion-header>
+
+<ion-content center text-center padding ng-controller="MainCtrl">
+
+  <ion-item>
+    
+<ion-input  id="resultado" placeholder = "0" type="text" [(ngModel)]="value" autofocus name="Display" ></ion-input>
+
+  </ion-item>
+<br><br><br><br><br><br>
+  <table align = "center"> 
+    <tr>
+       <button ion-button (click)="siete('AC')"  id="botones"><td>AC</td></button>
+       <button ion-button (click)="siete('+/-')" id="botones"><td>+/-</td></button>
+       <button ion-button (click)="siete('%')" id="botones"><td>%</td></button>
+       <button ion-button (click)="siete('/')" id="botones"><td>/</td></button>
+    </tr>
+
+    <tr>
+       <button ion-button (click)="siete(7)"  id="botones" value="7"><td>7</td></button>
+       <button ion-button (click)="siete(8)" id="botones"><td>8</td></button>
+       <button ion-button (click)="siete(9)" id="botones"><td>9</td></button>
+       <button ion-button (click)="siete('*')" id="botones"><td>x</td></button>
+    </tr>
+
+    <tr>
+       <button ion-button (click)="siete(4)" id="botones"><td>4</td></button>
+       <button ion-button (click)="siete(5)" id="botones"><td>5</td></button>
+       <button ion-button (click)="siete(6)" id="botones"><td>6</td></button>
+       <button ion-button (click)="siete('-')" id="botones"><td>-</td></button>
+    </tr>
+
+    <tr>
+       <button ion-button (click)="siete(1)" id="botones"><td>1</td></button>
+       <button ion-button (click)="siete(2)" id="botones"><td>2</td></button>
+       <button ion-button (click)="siete(3)" id="botones"><td>3</td></button>
+       <button ion-button (click)="siete('+')" id="botones"><td>+</td></button>
+    </tr>
+
+    <tr>
+       <button ion-button (click)="siete(0)" id="botones"><td>0</td></button>
+       <button ion-button (click)="siete('.')" id="botones"><td>.</td></button>
+       <button ion-button (click)="siete('=')" id="botones"><td>=</td></button>
+    </tr>
+  </table> 
+
+   
+</ion-content>
